@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C# / .NET build outputs
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Blender backup files
+*.blend1
+*.blend2
+*.blend@
+
+# IDEs & Editor configurations
+.vscode/
+.vs/
+.idea/
+*.swp
+*~
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary & Log files
+*.log
+PicoGK_Logs.txt
+tmp/
+*.tmp
