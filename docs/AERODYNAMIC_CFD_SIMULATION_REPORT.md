@@ -44,7 +44,7 @@ $$C_p = \frac{p - p_\infty}{\frac{1}{2}\rho_\infty V_\infty^2} = 1 - \left(\frac
 
 ---
 
-## 3. 3D Wind Tunnel Velocity Streamlines
+## 3. 3D Wind Tunnel Velocity Streamlines & 2D Airfoil Flow Fields
 
 ![3D Wind Tunnel Streamlines Hero](../assets/simulation_heatmaps/Garuda_Vedang_3D_Wind_Tunnel_Streamlines_Hero.png)
 ![Needle Nose CFD Flowstream Closeup](../assets/simulation_heatmaps/Garuda_Vedang_Needle_Nose_CFD_Closeup.png)
@@ -53,6 +53,14 @@ The 3D wind tunnel streamlines demonstrate continuous velocity contours:
 - **Streamline Curvature:** Streamlines wrap tightly around the needle nose, staying adhered across the upper canopy and lower chin camera turret recess.
 - **Doorless A320 Belly Well Adherence:** Because the main gear wheels retract flush into contoured belly pockets, airflow skips across the belly skin without recirculating inside deep open cavities.
 - **Pusher Wake Interaction:** Flow leaving the aft fuselage is ingested into the 2213 brushless motor prop disc, accelerating turbulent wake dissipation and reducing boattail pressure drag.
+
+### 3.1. 2D Airfoil Wind Tunnel CFD Streamlines & Velocity Contours (Garuda Vedang 1500mm)
+
+![Garuda Vedang 1500mm Airfoil Streamlines](../assets/cfd_renders/Garuda_Vedang_CFD_Streamlines_Velocity.png)
+
+- **Upper Surface Acceleration:** Suction accelerates local flow velocity to a peak of **21.4 m/s** over the upper camber at $x/c \approx 0.25$, creating a low-pressure lift zone.
+- **Lower Surface Compression & Downwash:** High-pressure compression zone under the flat bottom surface ($11.9\text{--}13.4\text{ m/s}$) generates positive lift while streamlines curve downward behind the trailing edge, confirming circulation downwash.
+- **Attached Boundary Layer:** White streamline vectors confirm fully attached flow over the entire chord ($x/c = 0 \to 1.0$) with zero separation bubbles.
 
 ---
 

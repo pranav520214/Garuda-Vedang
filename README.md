@@ -52,11 +52,12 @@ The wing utilizes an optimized high-lift, low-drag reflex section (Clark-Y aerod
 - **Laminar Flow Preservation:** Favorable pressure gradient persists across the first 35% of chord, maintaining a thin laminar boundary layer before smooth turbulent transition.
 - **Aft Pressure Recovery:** Gradual pressure recovery toward the trailing edge eliminates aft boundary layer separation, even at high angles of attack ($\alpha = 8^\circ$).
 
-### 2.2. Airfoil Chordwise Flow Streamlines
-![Airfoil Side Streamlines](assets/cfd_renders/Garuda_Vedang_CFD_Side_Streamlines.png)
+### 2.2. Airfoil Flow Streamlines & Velocity Contours (Garuda Vedang 1500mm)
+![Garuda Vedang 1500mm Wind Tunnel CFD Streamlines](assets/cfd_renders/Garuda_Vedang_CFD_Streamlines_Velocity.png)
 
-- Streamline velocity vectors demonstrate attached chordwise flow across the upper camber without recirculation bubbles.
-- Reflex trailing-edge curvature provides natural pitch-trim stability with a static margin of **12% MAC**.
+- **Upper Surface Acceleration:** Suction accelerates local flow velocity to a peak of **21.4 m/s** over the upper camber at $x/c \approx 0.25$, creating a low-pressure lift zone.
+- **Lower Surface Compression & Downwash:** High-pressure compression zone under the flat bottom surface ($11.9\text{--}13.4\text{ m/s}$) generates positive lift while streamlines curve downward behind the trailing edge, confirming circulation downwash.
+- **Attached Boundary Layer:** Streamline vectors demonstrate fully attached chordwise flow across the camber line without separation bubbles or recirculation stalls.
 
 ### 2.3. Aerodynamic Drag Polars & Flight Envelope
 ![Aerodynamic Polars](assets/cfd_renders/Garuda_Vedang_Aerodynamic_Polars.png)
