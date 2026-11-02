@@ -23,6 +23,7 @@ from test_wind_envelope import TestGarudaVedangWindEnvelope
 from test_latch_system import TestGarudaVedangLatchSystem
 from test_power_endurance import TestGarudaVedangPowerAndEndurance
 from test_cad_integrity import TestGarudaVedangCADIntegrity
+from test_needle_fuselage_and_joints import TestGarudaVedangNeedleAndJoints
 
 
 def run_test_suite():
@@ -40,6 +41,7 @@ def run_test_suite():
         ("Detachable Belly Latch & Fail-Safe Mechanics", TestGarudaVedangLatchSystem),
         ("Propulsion Power Draw & 60-90m Endurance", TestGarudaVedangPowerAndEndurance),
         ("CAD Mesh, Blueprints & Asset Integrity", TestGarudaVedangCADIntegrity),
+        ("Needle Ogive, Modular Joints & IP Protection", TestGarudaVedangNeedleAndJoints),
     ]
 
     total_passed = 0

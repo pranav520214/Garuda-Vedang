@@ -11,10 +11,25 @@ obj/
 *.userosscache
 *.sln.docstates
 
-# Blender backup files
+# =====================================================================
+# PROPRIETARY CAD & MANUFACTURING ASSETS (PROTECTED IP - DO NOT LEAK)
+# =====================================================================
+*.stl
+*.STL
+*.step
+*.stp
+*.iges
+*.igs
+*.vdb
+*.blend
 *.blend1
 *.blend2
 *.blend@
+*.obj
+*.mtl
+*.fbx
+*.glb
+*.gltf
 
 # IDEs & Editor configurations
 .vscode/
