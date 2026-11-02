@@ -12,8 +12,10 @@ obj/
 *.sln.docstates
 
 # =====================================================================
-# PROPRIETARY CAD & MANUFACTURING ASSETS (PROTECTED IP - DO NOT LEAK)
+# PROPRIETARY CAD, MANUFACTURING & TOOLING ASSETS (DO NOT COMMIT)
 # =====================================================================
+cad_models/
+optimization/
 *.stl
 *.STL
 *.step
@@ -30,6 +32,8 @@ obj/
 *.fbx
 *.glb
 *.gltf
+*.dxf
+*.dwg
 
 # IDEs & Editor configurations
 .vscode/

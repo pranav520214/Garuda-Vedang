@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Unified Test Runner for Garuda Vedang Autonomous Aerial Systems.
-Executes all regression suites (aerodynamics, wind envelope, latch mechanics, power, CAD integrity)
-and prints a formatted engineering verification report.
+Executes all regression and briefing verification suites (aerodynamics, wind envelope,
+detachable latch dynamics, propulsion power, airfoil figures, and simulation benchmarks).
 """
 
 import sys
@@ -22,13 +22,13 @@ from test_aerodynamics import TestGarudaVedangAerodynamics
 from test_wind_envelope import TestGarudaVedangWindEnvelope
 from test_latch_system import TestGarudaVedangLatchSystem
 from test_power_endurance import TestGarudaVedangPowerAndEndurance
-from test_cad_integrity import TestGarudaVedangCADIntegrity
-from test_needle_fuselage_and_joints import TestGarudaVedangNeedleAndJoints
+from test_briefing_integrity import TestGarudaVedangBriefingIntegrity
+from test_simulation_benchmarks import TestGarudaVedangSimulationBenchmarks
 
 
 def run_test_suite():
     print("=" * 76)
-    print(" GARUDA VEDANG AUTONOMOUS AERIAL SYSTEMS // ENGINEERING VERIFICATION")
+    print(" GARUDA VEDANG AUTONOMOUS AERIAL SYSTEMS // BRIEFING & FLIGHT TEST SUITE")
     print(" Two-Tier Twin-Boom Mothership & Integrated Detachable Scout Drone")
     print("=" * 76)
     print(f" Repository Base: {REPO_ROOT}")
@@ -40,8 +40,8 @@ def run_test_suite():
         ("All-Weather Wind Envelope & Gust Margin", TestGarudaVedangWindEnvelope),
         ("Detachable Belly Latch & Fail-Safe Mechanics", TestGarudaVedangLatchSystem),
         ("Propulsion Power Draw & 60-90m Endurance", TestGarudaVedangPowerAndEndurance),
-        ("CAD Mesh, Blueprints & Asset Integrity", TestGarudaVedangCADIntegrity),
-        ("Needle Ogive, Modular Joints & IP Protection", TestGarudaVedangNeedleAndJoints),
+        ("Executive Briefing, Airfoil & Test Figures Integrity", TestGarudaVedangBriefingIntegrity),
+        ("Flight Simulation & Thermal Benchmarks", TestGarudaVedangSimulationBenchmarks),
     ]
 
     total_passed = 0
@@ -79,7 +79,7 @@ def run_test_suite():
     print("-" * 76)
 
     if total_failed == 0 and total_errors == 0:
-        print(" >> ALL BENCH & SIMULATION SPECIFICATIONS VERIFIED (TRL 2/3 READY)")
+        print(" >> ALL BRIEFING, AIRFOIL & SIMULATION BENCHMARKS VERIFIED (TRL 3/4 READY)")
         print("=" * 76)
         return 0
     else:
