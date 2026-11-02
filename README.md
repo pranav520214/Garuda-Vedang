@@ -152,12 +152,10 @@ python testing/run_all_tests.py
 
 ---
 
-## 6. Executive Documents & Presentations
+## 6. Aerodynamic & Flight Simulation Reports
 
-Detailed submissions and presentation slides are available in [`docs/`](docs/):
+Detailed engineering simulation reports and analytical studies are available in [`docs/`](docs/):
 
-- [**Official Defense/Competition Submission PDF**](docs/Garuda_Vedang_Official_Submission.pdf): 12-page comprehensive project brief.
-- [**Competition Pitch Deck PDF**](docs/Garuda_Vedang_Pitch_Deck.pdf): 13-slide executive briefing presentation.
 - [**Aerodynamic CFD Simulation Report**](docs/AERODYNAMIC_CFD_SIMULATION_REPORT.md): In-depth numerical study of flow fields, pressure distribution, and drag polars.
 - [**Structural FEA Load Report**](docs/STRUCTURAL_FEA_AND_PICOGK_REPORT.md): Von Mises stress distributions under 4.5g flight load and safety factors.
 - [**Thermal Dissipation & Ventilation Report**](docs/THERMAL_AND_VENTILATION_REPORT.md): Convective heat transfer analysis and cooling tunnel performance.

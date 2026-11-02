@@ -35,6 +35,13 @@ optimization/
 *.dxf
 *.dwg
 
+# Presentations & Private Submissions
+*.pptx
+*.ppt
+*Submission*
+*Pitch*
+*Presentation*
+
 # IDEs & Editor configurations
 .vscode/
 .vs/

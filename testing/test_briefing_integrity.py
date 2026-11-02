@@ -18,13 +18,12 @@ class TestGarudaVedangBriefingIntegrity(unittest.TestCase):
         self.gitignore_file = self.repo_root / ".gitignore"
 
     def test_executive_briefing_documents_exist(self):
-        """Verify competition submission, technical report, handbook, and slide decks exist."""
+        """Verify technical reports and aerodynamic engineering handbook exist."""
         expected_docs = [
-            (self.docs_dir / "Garuda_Vedang_Official_Submission.pdf", 50000),
-            (self.docs_dir / "Garuda_Vedang_Pitch_Deck.pdf", 50000),
-            (self.docs_dir / "Garuda_Vedang_Technical_Report.docx", 10000),
+            (self.docs_dir / "AERODYNAMIC_CFD_SIMULATION_REPORT.md", 2000),
+            (self.docs_dir / "STRUCTURAL_FEA_AND_PICOGK_REPORT.md", 2000),
+            (self.docs_dir / "THERMAL_AND_VENTILATION_REPORT.md", 1000),
             (self.docs_dir / "UAV_Airframe_Handbook.pdf", 50000),
-            (self.docs_dir / "slide_previews" / "slide_01.png", 50000),
         ]
         for doc_path, min_bytes in expected_docs:
             self.assertTrue(doc_path.exists(), f"Missing briefing document: {doc_path.name}")
